@@ -75,7 +75,7 @@ least somewhat useful)::
    grunt templates (compiles templates to src/lib/templates.js)
    grunt watch (runs JSHint and compiles templates when either change)
    
-   Kashana
+Kashana
 =======
 
 Kashana es una herramienta de gestión de marco lógico de código abierto para la planificación y evaluación proyectos, usados y escritos por `Aptivate <http://aptivate.org/>` _.
@@ -94,17 +94,16 @@ Requisitos del sistema:
 
 En el directorio de implementación, ejecute: ::
 
-    ./bootstrap.py
+    ./bootstrap.py
     ./tasks.py deploy: <nombre del entorno>
 
-`` <nombre del entorno> `` hace referencia a uno de los `` local_settings.py. * `` archivos del directorio ``django / website``.
+``<nombre del entorno>`` hace referencia a uno de los ``local_settings.py.*`` archivos en del directorio ``django / website``.
 Estos contienen, entre otras cosas, los detalles de la base de datos MySQL. Entonces, para implementar el entorno ``dev``
 ingresarías: ::
 
     ./tasks.py deploy: dev
 
-
-Usecases
+Casos de uso
 --------
 1. Un equipo multiactor y multi-organización opera en docenas o cientos de pueblos y áreas urbanas en todo Zambia. Necesitan soporte basado en Android para coordinar su trabajo. Están evaluando el bienestar, usando ODK o similar en sus tabletas / teléfonos. También pueden estar coordinando la prestación de algunos servicios, tal vez educación sanitaria, por ejemplo. Pueden estar ayudando a las personas a completar formularios para solicitar diversos tipos de ayuda o registrarse para diferentes relaciones con las burocracias gubernamentales. Necesitan tener una herramienta de evaluación de bienestar que rastree el impacto de su trabajo y el trabajo de otras agencias de desarrollo en el área. ¿Cómo coordinan sus actividades? ¿Cómo colaboran? ¿Cómo se alojan sus documentos? ¿Podría Kashana ser todo o parte de la solución?
 2. Imaginemos que una organización obtiene una subvención para trabajar con nosotros y su capítulo ghanés. Quieren proporcionar una herramienta económica para coordinar el trabajo de su capítulo de Ghania a través de un teléfono móvil o una tableta muy económica. También necesitan mostrarles a sus donantes / financiadores que su trabajo para promover la participación local en Ghana está mejorando los resultados de la vida local. Si Kashana tiene que ayudar, debe proporcionar una forma de evaluar los impactos de la vida (o hacer un seguimiento de las evaluaciones de impacto de la vida) así como coordinar las actividades locales (tareas, calendario, etc. para los equipos locales y un grupo coordinador).
@@ -114,8 +113,8 @@ Usecases
 API
 ---
 
-Todas las URL excepto la creación son ``/ logframes /<logframe_pk>/<itemtype>/ <item id>``
-Las URL para la creación son ``/ logframes/<logframe_pk>/<itemtype>``
+Todas las URL excepto la creación son ``/logframes/<logframe_pk>/<itemtype>/<item id>``
+Las URL para la creación son ``/logframes/<logframe_pk>/<itemtype>``
 Acciones determinadas por tipo de solicitud ::
 
    PUT = actualización
