@@ -51,7 +51,7 @@ El código para el backend que hace el trabajo en el marco lógico existe bajo `
 Ejecutar pruebas de Javascript
 ------------------------
 
-Si está utilizando Ubuntu en version reciente, instale npm que también instalará nodejs. Debido a un conflicto de nombre con otro paquete, se denominará nodejs en lugar de nodo, por lo que tendrá que crear un enlace simbólico usted mismo (suponiendo que no tenga un paquete de nodo de radio amateur instalado):
+Si está utilizando Ubuntu en version reciente, instale npm que también instalará nodejs. Debido a un conflicto de nombre con otro paquete, se denominará nodejs en lugar de nodo, por lo que tendrá que crear un enlace simbólico usted mismo (suponiendo que no tenga un paquete de nodo de radio amateur instalado): ::
 
     sudo ln-usr / bin / nodejs / usr / local / bin / node
 
@@ -67,7 +67,7 @@ Instale dependencias locales cambiando al directorio alfie / javascript y ejecut
 Esto instalará todos los paquetes necesarios incluyendo Gulp que usamos para
 definir y ejecutar tareas. Actualmente se definen las siguientes tareas (y por lo menos algo útil) ::
 
-   grunt test (ejecuta pruebas)
-   grunt jshint (verifica el código con JSHint)
-   grunt templates (compila plantillas para src / lib / templates.js)
-   grunt watch (ejecuta JSHint y compila las plantillas cuando cambia)
+    grunt test (ejecuta pruebas)
+    grunt jshint (verifica el código con JSHint)
+    grunt templates (compila plantillas para src / lib / templates.js)
+    grunt watch (ejecuta JSHint y compila las plantillas cuando cambia)
